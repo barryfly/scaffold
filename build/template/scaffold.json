@@ -1,0 +1,29 @@
+{
+  "//1": "node配置：端口，服务名",
+  "nodeWrapperPort": 80,
+  "nodeConfigServiceName": "${nowProjectName}",
+
+  "//2": "标题配置：浏览器标题，应用标题",
+  "headerTitle": "${nowProjectName}",
+  "title": "${nowProjectName}",
+
+  "//3": "登录配置：方式，logo，域",
+  "loginMethods": ["account"],
+  "logoUrl": "",
+  "domain": "",
+
+  "//4": "多语言配置",
+  "multiLanguage": [{"name": "简体", "value": "zh-CN"}, {"name": "English", "value": "en-US"}],
+  "defaultLanguage": "zh-CN",
+  
+  "//5": "应用配置：名称，密钥，Key",
+  "appName": "",
+  "appKey": "",
+  "appSecret": "",
+
+  "//6": "后端服务配置",
+  "gateway": "http://gateway.dev.jwis.cn",
+  "authServer": "jic-authentication",
+  "accountServer": "jic-account",
+  "fileServer": "file"
+}

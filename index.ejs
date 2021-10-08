@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset=utf-8 />
+  <link rel="icon" href="/config/favicon.ico" />
+  <%
+    for(let css in htmlWebpackPlugin.files.css) {
+      let cssFile = htmlWebpackPlugin.files.css[css]
+      if(/\/app|vendor|common\.css$/.test(cssFile)) {
+  %>
+  <link rel="stylesheet" href="<%=cssFile %>" />
+  <%}}%>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title> 
+</head>
+<body random="<%= htmlWebpackPlugin.options.randomId%>">
+  <div id="app" class="height-full">
+    <div class="loading-container">
+      <div class="loading-dots"><i></i><i></i><i></i><i></i></div>
+    </div>
+  </div>
+    <script type="text/javascript" async src="/source/main.js?v=<%= htmlWebpackPlugin.options.randomId%>">
+  </script>
+</body>
+</html>
