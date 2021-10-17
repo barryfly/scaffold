@@ -15,7 +15,7 @@ let utils = require("./utils");
 let express = require("express");
 let webpack = require("webpack");
 let { merge } = require("webpack-merge");
-let scaffoldConfigChecker = require("./scaffold-config-check");
+let scaffoldConfigChecker = require("./check");
 
 let targetSystem = utils.getNowProjectName();
 let targetSystemPath = utils.getNowProjectPath();

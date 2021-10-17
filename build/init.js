@@ -74,14 +74,14 @@ function packageJsonUpdate() {
 			if(_.isEmpty(packageJsonData.scripts.start)) {
 				isFixed = true
 				_.extend(packageJsonData.scripts,{
-					"start": "npx start"
+					"start": "npx eld-start"
 				})
 			}
 
 			if(_.isEmpty(packageJsonData.scripts.build)) {
 				isFixed = true
 				_.extend(packageJsonData.scripts,{
-					"build": "npx build"
+					"build": "npx eld-build"
 				})
 			}
 

@@ -4,22 +4,23 @@
   "description": "Front end scaffold for vue",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/barryfly/scaffold.git"
   },
   "keywords": [
     "scaffold"
   ],
   "license": "ISC",
+  "author": "barry@gmail.com",
   "bin": {
-    "start": "build/dev-build.js",
-    "build": "build/prod-build.js",
-    "init": "build/project-init.js"
+    "eld-start": "build/start.js",
+    "eld-build": "build/build.js",
+    "eld-init": "build/init.js"
   },
   "scripts": {
-    "init": "node build/project-init.js self",
-    "start": "node build/dev-build.js self",
-    "build": "node build/prod-build.js self",
-    "map": "node build/prod-build.js self map"
+    "init": "node build/init.js self",
+    "start": "node build/start.js self",
+    "build": "node build/build.js self",
+    "map": "node build/build.js self map"
   },
   "dependencies": {
     "@babel/core": "^7.15.0",
